@@ -7,22 +7,6 @@ class NoticiasController < ApplicationController
     render json: noticias
   end
 
-  def show
-    noticia = Noticia.find(params[:id])
-    
-    render json: noticia
-  end
-
-  def create
-    noticia = Noticia.new(noticia_params)
-
-    if noticia.save
-      render json: noticia
-    else
-      raise json: {errors: noticia.errors}
-    end
-  end
-
   def update
     noticia = Noticia.find(params[:id])
 
