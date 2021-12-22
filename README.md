@@ -1,24 +1,11 @@
-# README
+# COMO RODAR ESSA APLICAÇÃO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## rodar os seguintes comandos
 
-Things you may want to cover:
+### `gem install bundler`
 
-* Ruby version
+### `bundle install`
 
-* System dependencies
+### `rake db:migrate`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### `rails s` (isso vai dar start no server, na porta 3000 por padrão)
